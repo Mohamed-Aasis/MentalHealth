@@ -1,0 +1,92 @@
+# =============================================================================
+# Mental Health Chatbot — Requirements
+# Neural Networks & Deep Learning Project
+# =============================================================================
+# Install with: pip install -r requirements.txt
+# GPU users: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Core Deep Learning & NLP
+# ---------------------------------------------------------------------------
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+transformers>=4.40.0
+tokenizers>=0.19.0
+datasets>=2.19.0
+accelerate>=0.29.0
+sentencepiece>=0.2.0
+evaluate>=0.4.1
+scikit-learn>=1.4.0
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.13.0
+
+# ---------------------------------------------------------------------------
+# Training Utilities
+# ---------------------------------------------------------------------------
+tqdm>=4.66.0
+wandb>=0.17.0          # Optional: experiment tracking (can run without account)
+seqeval>=1.2.2          # Sequence labelling metrics
+rouge-score>=0.1.2      # ROUGE for generation evaluation
+nltk>=3.8.1             # BLEU score, tokenization utilities
+sacrebleu>=2.4.0        # BLEU evaluation
+matplotlib>=3.8.0       # Training curve plots
+seaborn>=0.13.0         # Confusion matrix visualization
+
+# ---------------------------------------------------------------------------
+# Web Framework & API
+# ---------------------------------------------------------------------------
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9  # Form data (login/register)
+websockets>=12.0         # Optional future WebSocket support
+
+# ---------------------------------------------------------------------------
+# Database & Authentication
+# ---------------------------------------------------------------------------
+sqlalchemy>=2.0.30
+aiosqlite>=0.20.0        # Async SQLite driver
+alembic>=1.13.1          # DB migrations
+passlib[bcrypt]>=1.7.4   # Password hashing
+python-jose[cryptography]>=3.3.0  # JWT tokens
+email-validator>=2.1.1   # Email validation in Pydantic
+
+# ---------------------------------------------------------------------------
+# Data Validation & Serialization
+# ---------------------------------------------------------------------------
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# ---------------------------------------------------------------------------
+# HTTP & Network
+# ---------------------------------------------------------------------------
+httpx>=0.27.0            # Async HTTP client
+aiofiles>=23.2.1         # Async file operations
+requests>=2.31.0         # Sync HTTP (for dataset downloads)
+
+# ---------------------------------------------------------------------------
+# Text Processing & Utilities
+# ---------------------------------------------------------------------------
+python-dotenv>=1.0.1
+regex>=2024.4.16
+ftfy>=6.2.0              # Fixes Unicode/mojibake in text
+contractions>=0.1.73     # Expand contractions (I'm → I am)
+markdown>=3.6            # Markdown rendering on backend
+beautifulsoup4>=4.12.3   # HTML cleaning
+langdetect>=1.0.9        # Language detection for safety
+
+# ---------------------------------------------------------------------------
+# Configuration & Logging
+# ---------------------------------------------------------------------------
+loguru>=0.7.2            # Structured logging
+rich>=13.7.1             # Pretty terminal output
+python-dateutil>=2.9.0
+pytz>=2024.1
+
+# ---------------------------------------------------------------------------
+# Export & File Handling
+# ---------------------------------------------------------------------------
+openpyxl>=3.1.2          # Excel export
+reportlab>=4.2.0         # PDF export (optional)
